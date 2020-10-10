@@ -3,19 +3,19 @@
 var app = angular.module('example359', []).
     config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
-        when('/', { templateUrl: 'C:\Users\Poornisha\Documents\wt ass1\hiragana.html', activetab: 'projects', controller: HomeCtrl }).
+        when('/', { templateUrl: 'pages/hiragana.html', activetab: 'projects', controller: HomeCtrl }).
         when('/project/:projectId', {
-          templateUrl: function (params) { return 'C:\Users\Poornisha\Documents\wt ass1' + params.projectId + '.html'; },
+          templateUrl: function (params) { return 'pages/' + params.projectId + '.html'; },
           controller: ProjectCtrl,
           activetab: 'projects'
         }).
-        when('/katakana', {
-          templateUrl: 'C:\Users\Poornisha\Documents\wt ass1\katakana.html',
+        when('/japanese', {
+          templateUrl: 'pages/japanese.html',
           controller: PrivacyCtrl,
           activetab: 'privacy'
         }).
         when('/about', {
-          templateUrl: '\C:\Users\Poornisha\Documents\wt ass1about.html',
+          templateUrl: 'pages/about.html',
           controller: AboutCtrl,
           activetab: 'about'
         }).
