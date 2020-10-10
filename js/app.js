@@ -7,12 +7,12 @@ var app = angular.module('example359', []).
         when('/project/:projectId', {
           templateUrl: function (params) { return 'pages/' + params.projectId + '.html'; },
           controller: ProjectCtrl,
-          activetab: 'projects'
+          activetab: 'hiragana'
         }).
         when('/japanese', {
           templateUrl: 'pages/japanese.html',
           controller: PrivacyCtrl,
-          activetab: 'privacy'
+          activetab: 'japanese'
         }).
         when('/about', {
           templateUrl: 'pages/about.html',
